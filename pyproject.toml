@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "wasserfang"
+version = "0.1.0"
+description = ""
+authors = ["Marco Maier <mm.maiermarco@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+opencv-python = "^4.5.2"
+numpy = "^1.20.3"
+Pillow = "^8.2.0"
+pydantic = "^1.8.2"
+pywin32 = "^301"
+psutil = "^5.8.0"
+PyAutoGUI = "^0.9.52"
+kivymd = "0.104.2"
+Kivy = {extras = ["base"], version = "^2.0.0"}
+
+[tool.poetry.dev-dependencies]
+black = {version = "^21.6b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
