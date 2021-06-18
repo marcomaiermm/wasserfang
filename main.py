@@ -1,6 +1,5 @@
-# from gui.window import MainApp
-from services.scanning_area import scanning_area
+from gui.window import MainApp
 
 if __name__ == "__main__":
-    # MainApp().run()
-    scanning_area()
+    app = MainApp()
+    app.run()

@@ -19,7 +19,7 @@ Screen:
             size_hint_y: None
             height: self.texture_size[1]
             padding_y: 15
-        
+
         MDTextField:
             id: time
             hint_text: "Time to fish in minutes"
@@ -27,13 +27,13 @@ Screen:
             width: 200
             font_size: 18
             pos_hint: {"center_x":0.5}
-        
+
         MDRoundFlatButton:
-            id: fish
+            id: state_label
             text: "Start"
             font_size: 12
             pos_hint: {"center_x":0.5}
-            on_press: app.toggle_start()
+            on_press: app.toggle()
 
         MDLabel:
             id: catched_label
@@ -43,3 +43,19 @@ Screen:
             size_hint_y: None
             height: self.texture_size[1]
             padding_y: 4
+        
+        GridLayout:
+            cols: 2
+
+            MDLabel:
+                id: catch_label
+                text: "0"
+                font_size: 12
+                size_hint_y: None
+            
+            MDLabel:
+                id: time_label
+                text: "00:00:00"
+                font_size: 12
+                size_hint_y: None
+            

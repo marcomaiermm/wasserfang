@@ -1,13 +1,13 @@
 # if __name__ == "__main__":
 
 from utils.image import search, generate_frames, grab_screen
-from services.scanning_area import scanning_area
+from services.scanning_area import scan
 from operator import itemgetter
 import cv2
 
 
 def sc():
-    scanning_area()
+    scan()
 
 
 def loop():
@@ -30,4 +30,4 @@ def loop():
     instance.waitKey()
 
 
-scanning_area(initial=False)
+scan(initial=False)
